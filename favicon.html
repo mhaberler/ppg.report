@@ -1,0 +1,58 @@
+<style>
+  body {
+    margin: 0;
+  }
+
+  div {
+    position: relative;
+
+    box-sizing: border-box;
+
+    background: linear-gradient(
+        139deg,
+        rgba(26, 23, 125, 1),
+        rgba(13, 214, 0, 0)
+      ),
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 202 202' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.04' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+
+    border-radius: 0%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vw;
+    padding: 15%;
+    overflow: hidden;
+  }
+
+  div:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: sepia() hue-rotate(170deg) saturate(400%) brightness(50%);
+  }
+
+  svg {
+    z-index: 1;
+  }
+</style>
+
+<div>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0.22 171 468.8 298"
+    transform="scale(-1, 1)"
+  >
+    <g fill="white">
+      <path
+        d="M11 320c3 0 6-1 8-4 1-1 63-81 205-81a11 11 0 100-22C71 213 5 299 2 303a11 11 0 009 17z"
+      />
+      <path
+        d="M405 171c-48 0-61 24-63 27-2 5 0 11 5 14s12 1 14-4c1-1 10-16 44-16 39 0 43 30 43 43 0 16-18 64-96 64-46 0-73-7-97-13-20-4-38-9-63-9-55 0-157 44-191 113a11 11 0 0019 9c31-60 124-100 172-100 22 0 39 4 58 8 25 6 53 13 102 13 96 0 117-63 117-85 0-30-16-64-64-64z"
+      />
+      <path
+        d="M224 341c-113 0-137 69-138 72a11 11 0 0020 6s20-56 118-56c96 0 139 26 139 53 0 26-18 32-32 32s-30-13-35-18a11 11 0 10-16 15c3 2 26 24 51 24s53-14 53-53c0-36-42-75-160-75z"
+      />
+    </g>
+  </svg>
+</div>
