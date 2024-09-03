@@ -23,7 +23,7 @@ jobs:
       - run: corepack enable
       - run: |
           npm config set '@fortawesome:registry' '${{ secrets.FONTAWESOME_REGISTRY }}'
-          npm config set '//harding.dev:23435/:_authToken' '${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}'
+          npm config set '//npm.fontawesome.com/:_authToken' '${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}'
           pnpm install
 
       # TODO: code coverage, reporting, break these steps up
